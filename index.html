@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Как подготовиться к работе над курсовой</title>
+
+  <style>
+    /*Настраиваем типографику*/
+     :root {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 1.2em;
+      line-height: 1.4em;
+      box-sizing: border-box;
+     }
+
+     
+    /*Настраиваем вид и поведение ссылок при наведении*/
+     a.link {
+      color: #5d91c2;
+      text-decoration: none;
+      border-bottom: 1px solid #5d91c2;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+     }
+
+    /*Настраиваем вид и поведение ссылок-картинок при наведении*/
+     a img {
+      color: #5d91c2;
+      text-decoration: none;
+      border: none;
+      transition: 0.3s ease-out;
+     }
+
+     a:hover img {
+      color: #f06d41;
+      text-decoration: none;
+      border-color: #f06d41;
+      opacity: 0.8;
+      border: solid .1px;
+     }
+
+     
+
+     /*Настраиваем иллюстрации*/
+     img{max-width: 100%;
+     }
+
+     .author img{
+     width: 75px;
+     height: 75px;
+     }
+
+     .logo{
+      max-width: 68%;
+      margin-bottom: 15px;
+     }
+  
+     /*Задаем типографику подписи под иллюстрацией*/
+     p.caption{
+     font-size: 14px;
+     line-height: 18px;
+     color: #000;
+     text-align: left;
+     margin-top: 0px;
+     margin-bottom: 10px;
+     }
+
+     /*Настраиваем основную колонку для статьи*/
+     .conteiner{
+      padding-right: 20px;
+      padding-left: 20px;
+      margin-left: 5em;
+      margin-right: 5em;
+     }
+
+     /*row — флекс-контейнер, этаж сетки*/
+     .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+     }
+
+     /*col-1 — основная колонка текста*/
+     .col-1 {
+        flex-basis: 66.6%;
+        max-width: 66.6%;}
+
+    /*col-2 — колонка на полях*/
+     .col-2{
+        flex-basis: 33.3%;
+        max-width: 33.3%;
+     }
+
+     .sidenote{
+     padding-left: 25px;
+     }
+
+     .sidenote p, a{
+     font-size: 14px;
+     }
+
+    /*Настраиваем плашку*/
+     .end{
+      background-color:#deefff;
+      border-radius: 15px;
+      margin: 0 0% 3%;
+      padding: 1em;
+     }
+
+     /*Убираем буллиты и отступ слева*/
+     ul {
+      list-style: none inside;
+      padding-left: 0;
+     }
+
+     /*Задаем отступы между элементами перечня*/
+     * + li {
+      margin-top: .4rem;
+     }
+
+  </style>
+</head>
+
+<body>
+  <article class="conteiner">
+    <div class="row"><img alt="страдания студента" class="logo" src="i/first.png">
+    </div>
+
+
+    <div class="row">
+      <div class="col-1">
+        <h1>Как подготовиться к работе над курсовой</h1>
+
+
+        <p>На 15-ой неделе всем студентам школы редаторов открываются темы курсовой работы. На всё про всё дается две недели.</p>
+
+
+        <p>Чтобы уменьшить количество тревожности в этом мире, я подготовил простые советы, которые помогут при подготовке к работе над курсовой.</p>
+      </div>
+
+
+      <div class="col-2 sidenote author">
+        <img alt="фото автора" src="i/anton.png">
+        <p>Антон Кошуба</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1">
+        <h2>Перечитать лекции</h2>
+
+
+        <p>Если кратко — за 14 недель в Бюро дают очень много материала. Большой объем лекций трудно запомнить. Чтобы освежить «Теорию близости» рекомендую перечитывать лекции.</p>
+
+
+        <p>Так выглядит первая неделя в учебном кабинете студента:</p>
+        <img alt="расписание на первую неделю" src="i/week.png">
+
+        <p class="caption">Все лекции есть в видео и текстовом вариантах</p>
+      </div>
+
+
+      <div class="col-2 sidenote">
+        <p style="padding-top: 83px;">Артемий Лебедев. <a class="link" href="https://www.artlebedev.ru/kovodstvo/sections/136/">Теория близости</a></p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1">
+        <h2>Читать советы</h2>
+
+
+        <p>Если лекций недостаточно — ищите ответ в «Советах». На сайте есть удобный поиск — достаточно ввести запрос и выбрать подходящий совет.</p>
+        <a href="https://bureau.ru/bb/soviet/found/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D1%8C%D1%8F%D0%B6"><img alt="231 совет на запрос интерлиньяж" src="i/inter.png"></a>
+
+        <p class="caption">На запрос «Интерлиньяж» найден 231 совет</p>
+      </div>
+
+
+      <div class="col-2 sidenote">
+        <a href="https://bureau.ru/soviet/"><img alt="4245 советов на сайте бюро" src="i/sovet.png" style="padding-top: 25px;"></a>
+
+        <p style="padding-top: 170px;">Михаил Нозик. <a class="link" href="https://bureau.ru/soviet/20191002/">Влезание в интерлиньяж</a></p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1">
+        <h2>Начните прямо сейчас</h2>
+
+        <p><b>Не откладывайте на последний день.</b> Иногда бывает так что на последние две недели учебы сваливается много задач: сдать финальные тесты, работа по дому, дедлайны на работе. Работать над курсовой в таком состоянии трудно, постоянно что-то отвлекает. Чтобы этого избежать начните думать о курсовой с первой недели учебы.</p>
+
+        <p><b>Найдите источник информации.</b> Любая статья начинается со сбора матриала. Посмотрите вокруг, наверняка у вас уже есть несколько знакомых в разных сферах или жизненный опыт, на основе которого можно написать статью.</p>
+
+        <p>Например, вы разбираетесь в кофе, работали бариста и можете часами рассказывать про отличия арабики от робусты. Или вы мастерски выращиваете герань и можете дать польезные советы начинающим садоводам.</p>
+
+        <p><b>Выпишите интересные для вас темы.</b> Когда вы определились с источниками информации — выпишите темы, на которые хотите написать статью. Необязательно формулировать тему как что-то уже утвержденное, достаточно просто идеи: как верстать статю в хтмл, как выбрать миксер для большой семьи.</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-1 end">
+        <h2>Что дальше</h2>
+        <ul>
+          <li>Перечитывайте и пересматривайте лекции</li>
+          <li>Читайте советы</li>
+          <li>Смотрите разборы работ предыдущих потоков</li>
+          <li>Находите полезное</li>
+          <li>Делайте кайфовое</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</body>
+</html>
